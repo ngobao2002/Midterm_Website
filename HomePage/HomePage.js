@@ -59,39 +59,25 @@ function BuyMedicine(){
 function redirect() {
     var input = document.getElementById('userInput').value.toLowerCase();
      switch(input) {
-        case 'covid':
-            // alert("hello");
-            location.replace("./../SearchBenh/Covid/Covid.html");
-            return false;
-            //window.location = '../contact/contact.html';
-          break; 
-        case 'covid19':
-            window.location.replace("./../SearchBenh/Covid/Covid.html");
-            return false;
-            break;
-        case 'COVID':
-            location.replace("./../SearchBenh/Covid/Covid.html");
-            return false;
-            break; 
-        case 'sốt xuất huyết':
+        case 'dengue':
             location.replace("./../SearchBenh/SotXuatHuyet/SXHuyet.html");
             return false;
             break; 
-        case 'SỐT XUẤT HUYẾT':
+        case 'DENGUE':
               location.replace("./../SearchBenh/Covid/SXHuyet.html");
               return false;
               break; 
-        case 'sot xuat huyet':
+        case 'dengue':
               location.replace("./../SearchBenh/Covid/SXHuyet.html");
               return false;
               break; 
-        case 'SOT XUAT HUYET':
+        case 'DENGUE':
               location.replace("./../SearchBenh/Covid/SXHuyet.html");
               return false;
               break; 
 
         default:
-             alert("Không có bệnh này. Mời bạn nhập lại.")
+             alert("The disease can not found. Please try again!")
              break;
      }
  }
