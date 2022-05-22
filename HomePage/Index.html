@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine-Foods</title>
+  <link rel="stylesheet" href="../BootStrap 5.0/css 5.0/bootstrap.min.css">
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./../image/logo-footer.png" />
+</head>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div style="padding-top: -5px !important; padding-bottom: -10px;" class="container-fluid">
+        <!-- home -->
+        <div style="margin: 0px 190px 0px 150px; display: flex;">
+            <a href="../HomePage/Index.html"><img style="padding-top: 5px;" src="../image/logo-footer.png"
+                id="LogoHeader" width="74px" height="75px" alt="">
+            </a>
+            <h4 style="margin: 18px 0px -3px 0px; color: rgb(190, 79, 0); text-align: center; line-height: 24px; margin-left: 10px;">
+              <a style="text-decoration: none;" href="../HomePage/Index.html">Medicine-Foods</a><br>
+              <p style="font-size: 15px; color: rgba(114, 114, 114, 0.822);"><i>Vietnamese's mental heath</i></p>
+            </h4>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="width: 50% !important;" class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div>
+            <!-- 1 -->
+            <div style="height: auto; border-bottom: 0.1px solid black;">
+              <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- contact -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./../contact/contact.html"><b>Contact</b></a>
+                </li>
+                <!-- Review -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><b>Gallery</b></a>
+                </li>
+                <!-- search -->
+                <div style="display: flex; margin-left: 50px; margin-right: 30px;">
+                  <form class="d-flex" onsubmit="return redirect();">
+                    <input id="userInput" style="margin-top: 6px;" class="form-control me-2" type="search"
+                      placeholder="Search" aria-label="Search">
+                    <button style="border-color: transparent;" class="btn btn-outline-success" type="submit">
+                      <i style="font-size: 20px; color: rgb(255, 68, 35); margin-top: 2px;" class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </ul>
+            </div>
+            <!-- 2 -->
+            <div style="height: auto;">
+              <ul style="list-style: none !important;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- vitamin -->
+                <li style="margin-left: 18px !important;" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Vitamin</b>
+                  </a>
+                  <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../vitamin/vitamin A/VitaminA.html">Vitamin A</a></li>
+                    <li><a class="dropdown-item" href="#">Vitamin B</a></li>
+                    <li><a class="dropdown-item" href="#">Vitamin C</a></li>
+                    <li><a class="dropdown-item" href="#">Vitamin D</a></li>
+                    <li><a class="dropdown-item" href="#">Vitamin E</a></li>
+                    <li><a class="dropdown-item" href="#">Vitamin K</a></li>
+                  </ul>
+                </li>
+                <!-- minerals -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Minerals</b>
+                  </a>
+                  <ul id="Minerals" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./../minerals/Axit folic/folic.html">Folic acid</a></li>
+                    <li><a class="dropdown-item" href="#">Calcium</a></li>
+                    <li><a class="dropdown-item" href="#">Iron</a></li>
+                    <li><a class="dropdown-item" href="#">Zinc</a></li>
+                    <li><a class="dropdown-item" href="#">Chromium</a></li>
+                  </ul>
+                </li>
+                <!-- buy medicine -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle menu-buy" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    <b style="font-size: 17px; color: rgb(117, 23, 10);">Buy-Medicine</b>
+                  </a>
+                  <ul id="Menu-Medicine" class="dropdown-menu menu-buy-child" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.pharmacity.vn/">Pharmacity</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocminhchau.com/lien-he/">Minh Chau Pharmacy</a></li>
+                    <li><a class="dropdown-item" href="https://www.nhathuocankhang.com/">An Khang Pharmacy</a></li>
+                    <li><a class="dropdown-item" href="http://nhathuocviethuong.vn/">Viet Huong Pharmacy</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocviet.vn/">Viet Pharmacy</a></li>
+                    <li><a class="dropdown-item" href="https://nhathuocphuongchinh.com/">Phuong Chinh Pharmacy</a></li>
+                    <li><a class="dropdown-item" href="https://giahanpharmacy.vn/">Gia Han Pharmacy</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- main -->
+  <main>
+    <!-- button scroll top -->
+    <!-- <button style="font-size: 30px; background-color: black;" onclick="toTop()" id="top" title="Go to top"> TOP </button> -->
+    <img src="./../../image/top (1).png" onclick="toTop()" id="top"> 
+       
+    <!-- IMG đầu của homepage -->
+    <div>
+        <img style="background: no-repeat; position: absolute; border-bottom: 1px solid rgba(101, 179, 199, 0.212);"
+          src="../image/slide2.jpg" width="100%" height="410px" alt="">
+      <div class="ImgFirst">
+        <h2 style="text-align: left; font-weight: 450;">
+          MEDICINE-FOODS<br>
+          A base for building a better healthcare system of Vietnam.
+        </h2>
+        <p style="margin-top: 20px;">
+          Medicine-food is a website about health, helping users quickly access the disease they are looking for, and all that information is aggregated and selected from Wikipedia, Google, etc.
+        </p> <br>
+        <a href="#ReadMoreSmooth"><input class="ReadMore" type="button" value="READ MORE INFORMATION"></a>
+      </div>
+    </div>
+
+    <!-- 4 lợi ích và quảng cáo -->
+    <div class="One1">
+      <div style="display: flex;">
+        <div style="width: 100%; display: flex; margin: 50px 10px 10px 10px">
+          <div style="width: 40%;">
+            <div>
+              <h2 style="color: rgba(14, 14, 14, 0.959); line-height: 45px; text-align: center; font-weight: 300;"><b>4
+                  advantages of<br>Medicine-Foods</b></h2>
+              <hr class="HrLoiIch">
+              <p style="margin: 15px 30px 0px 35px; text-align: center; color: rgb(31, 31, 31);">
+                Welcome to our website,  we always make a difference, and according to users' opinions, from there select and design a website that meets those opinions.
+              </p>
+            </div>
+            <div>
+              <img style="margin: -15px 0px 10px 0px;" src="../image/Home2.png" width="95%" alt="">
+            </div>
+          </div>
+          <!-- div 4 cái icon nhỏ -->
+          <div style="width: 55%; margin-top: -55px;">
+            <img style="margin-left: 205px;" src="./../image/homepageLOIICH1.png" width="55%" alt="">
+            <div class="CaiNho" style="display: flex; width: 100%;">
+                <!-- 1 -->
+              <div
+                style="margin: 30px 0px 0px 60px; width: 45%; border-right: 0.5px solid rgba(66, 66, 66, 0.493); border-bottom: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin-right: 50px;">
+                  <div>
+                    <img class="LoiIch" src="../image/DeDangUSE.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div style="text-align: left !important;">
+                    <h4 style="color: rgb(7, 153, 19); text-align: left; margin: 16px 0px 0px 0px;">EASY TO USE</h4>
+                  </div>
+                </div>
+                <p style="margin:5px 50px 50px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Simple, beautiful interface. Functions and content revolve around diseases and drugs only. In addition, it is also constantly updated with health reports.
+                </p>
+              </div>
+              <!-- 2 -->
+              <div style="margin: 30px 0px 0px 0px; width: 45%; border-bottom: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin-left: 50px;">
+                  <div>
+                    <img class="LoiIch" src="../image/DapUngNhuCau.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(175, 87, 5); text-align: left; margin: 16px 0px 0px 0px">MEET THE NEEDS</h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 0px 50px 50px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  Collecting information and getting opinions of users and then producing a website with that request and the website's information is taken and summarized from Wikipedia, Google,...
+                </p>
+              </div>
+            </div>
+            <div class="CaiNho" style="display: flex; width: 100%;">
+              <!-- 3 -->
+              <div
+                style="margin: 0px 0px 0px 60px; width: 48.5%; border-right: 0.5px solid rgba(204, 204, 204, 0.493);">
+                <div style="display: flex; margin: 40px 50px 0px 0px;">
+                  <div>
+                    <img class="LoiIch" src="../image/NhanhNhe.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(175, 87, 5); text-align: left; margin: 16px 0px 0px 0px"> FAST-LIGHTLY-SMOOTHLY</h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 50px 5px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  The top criteria of a good Website are FAST-LIGHTLY-SMOOTHLY, creating comfort for users. And Medicine-Foods always tries to do that well.
+                </p>
+              </div>
+              <!-- 4 -->
+              <div style="margin: 40px 0px 0px 50px; width: 45%;">
+                <div style="display: flex;">
+                  <div>
+                    <img class="LoiIch" src="../image/NhanhNhe.png" width="70px" height="70px" alt="">
+                  </div>
+                  <div>
+                    <h4 style="color: rgb(7, 153, 19); text-align: left; margin: 16px 12px 0px 0px;">STANDARD INFORMATION 
+                    </h4>
+                  </div>
+                </div>
+                <p style="margin: 5px 0px 5px 0px; color: rgb(51, 51, 51);" class="TextLoiIch">
+                  With a website about medical information, accurate information is the first and most important factor Medicine-Foods always assures users of that.
+                </p>
+              </div>
+            </div>
+            <hr style="width: 50%; margin: 44px 0px 0px 215px; height: 5px; color: rgb(84, 9, 134); border-radius: 30px;">
+          </div>
+        </div>
+      </div>
+      <!-- tiếp -->
+      <!-- những điều nên đọc và top những căn bệnh đang bị nhiều nhất trên thế giới -->
+      <div id="ReadMoreSmooth" class="one">
+        <!-- phần bên trái -->
+        <div class="two" style="width: 70.3%; margin: 0px 8px 0px 18px; padding: 0px 10px 0px 12px;">
+          <!-- <img style="margin: 0px 0px 40px 10px; border-radius: 10px;" src="./../image/vinhhalong4.jpg" width="98%" alt=""> -->
+          <!-- 1 -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.6px;"><strong
+              style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">The 20 most beneficial habits for your health</strong></h5>
+          <p>
+            To have good health requires a process of taking care of and protecting health. Let's practice and maintain the habits below to have good health every day.
+          </p>
+          <div style="display: flex; width: 100% !important;">
+            <div style="width: 40%;">
+              <ul style="color: rgb(0, 65, 163); margin: -10px 0px 5px 0px;">
+                <li>Breathe properly.</li>
+                <li>Washing hands.</li>
+                <li>Do not pick your nose.</li>
+                <li>Straightening, stretching is very important.</li>
+                <li>Eat breakfast regularly.</li>
+                <li>Shower clean.</li>
+                <li>Cut your nails.</li>
+                <li>Do not share personal items.</li>
+                <li>Say no to foods high in sugar.</li>
+                <li>Sport regularly.</li>
+                <li>Have a good sleep.</li>
+                <li>Avoid anxiety.</li>
+                <li>Control the time sitting in front of computer.</li>
+                <li>Drink water.</li>
+                <li>Do not eat junk food.</li>
+                <li>Eat vegetables.</li>
+                <li>Not smoking.</li>
+                <li>Use sunscreen.</li>
+                <li>Safe sex.</li>
+                <li>Respect your body .</li>
+              </ul>
+            </div>
+            <div style="width: 60%;">
+              <img style="margin: 10px 10px 40px -10px;" src="./../image/home4.png" width="100%" alt="">
+            </div>
+          </div>
+          <!-- 2 -->
+          <h5 id="What"
+            style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.5px; text-align: right !important; margin-top: 30px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">
+              8 things to know to stay healthy when eating
+                            to drink</strong>
+          </h5>
+          <p style="text-align: right !important;">
+            We are often advised that to take care of our health, our diet needs to be in moderation. However, many people do not know how to apply this advice properly to maintain their health.
+          <div style="display: flex;">
+            <img src="./../image/home5.png" width="70%" height="190px" alt="">
+            <p style="float: right; text-align: right; color: rgb(139, 107, 0); margin: -5px 15px 0px 0px;">
+              Eating with less power .1 <br>
+              Eating with less salt .2 <br>
+              Eating with less oil .3 <br>
+              Eating with less sugar  .4 <br>
+              Eating more fruit and vegetable .5 <br>
+              Eating more calcium food .6 <br>
+              Eating more iodine .7 <br>
+              Drink water .8 <br>
+            </p>
+          </div>
+          </p>
+          <!-- 3 -->
+          <h5 id="What" style="border-bottom: 1px solid rgba(160, 160, 160, 0.411); height: 30.6px; margin-top: 60px;">
+            <strong style="border-bottom: 4px solid rgba(0, 58, 182, 0.877);">8 healthy super foods you should eat every day</strong></h5>
+          <p>
+          <p style="margin-top: -10px;">
+            Maintaining a healthy lifestyle and eating a healthy diet is the key to good health. This helps the body provide adequate energy to work more efficiently. The following are useful tips for the best diet from nutritionists you should consult.
+          </p>
+          <p>
+            Nutrient-rich foods that deserve a place in the daily diet include: spinach,
+            tomato, walnuts, catjang , carrot…
+          </p>
+          <ol style="margin-top: -10px; color: rgb(0, 56, 141);">
+            <li>Yoghurt, yogurt kefir, soya milk.</li>
+            <li>Spinach, kale, brassica integrifolia.</li>
+            <li>Tomato.</li>
+            <li>Blueberry.</li>
+            <li>Catjang.</li>
+            <li>Carrot, sweet potato, pumpkin, bell pepper.</li>
+            <li>Walnuts.</li>
+            <li>Oat.</li>
+          </ol>
+          </p>
+        </div>
+        <!-- phần bên phải -->
+        <div style="width: 27.35%; border-left: 1px solid rgba(150, 150, 150, 0.459);">
+          <!-- 1 -->
+          <div style="width: 100%; margin: -22px 0px 0px -2px; height: 696px;">
+            <div style="width: 100%; padding-top: 1px;">
+              <p
+                style="text-align: left; margin: 15px 0px 0px 25px; font-weight: 600; font-size: 20px; color: rgb(0, 150, 0);">
+                4 most deadly diseases in<br>
+                <strong style="color: rgb(218, 0, 0); font-weight: 500;">Vietnam.</strong>
+                <i style="color: rgba(119, 119, 119, 0.849); font-size: 13px; margin: 0px 0px 0px 10px;"
+                  class="fa fa-calendar" aria-hidden="true"> 20/05/2022</i>
+              </p>
+              <!-- top 1 -->
+              <h5 class="Top" style="margin: 23px 0px 0px 27px; height: 31.2px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  1:</strong>
+                  Heart-related diseaes.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/benh-ly-tim-mach-nguyen-nhan-gay-tu-vong-hang-dau/" target="_blank"><img
+                      src="./../image/HomePageTop1.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(37, 24, 13);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/benh-ly-tim-mach-nguyen-nhan-gay-tu-vong-hang-dau/" target="_blank">Heart-related
+                        diseaes</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Cardiovascular deaths are 20 times higher than cancer deaths. According to the World Health Organization (WHO)...</p>
+                </div>
+              </div>
+              <!-- top 2 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  2:</strong>
+                Cancer.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop2.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(39, 29, 14);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Cancer</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Cancer is a health concern of
+                    Global. After heart disease, cancer is the second leading cause of death...</p>
+                </div>
+              </div>
+              <!-- top 3 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  3:</strong>
+                Diabetes.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop3.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(41, 30, 15);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Diabetes</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Diabetes causes many complications
+                    myocardial infarction. Diabetes (diabetes mellitus) is a group of diseases...</p>
+                </div>
+              </div>
+              <!-- top 4 -->
+              <h5 class="Top" style="margin: 9px 0px 0px 27px; height: 31px;">
+                <strong
+                  style="font-size: 21.5px; color: rgb(218, 0, 0); border-bottom: 3.5px solid rgb(18, 153, 0); font-weight: 600;">Top
+                  4:</strong>
+                  Chronic kidney disease.
+              </h5>
+              <div style="margin-top: 10px;" class="TOP">
+                <div style="width: 36%; height: 88px;" class="IMG">
+                  <a href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/"><img
+                      src="./../image/HomePageTop4.jpg" width="100%" height="100%" alt=""></a>
+                </div>
+                <div style="width: 57%; margin: 0px 10px 0px 5px;">
+                  <h6>
+                    <b class="">
+                      <a style="text-decoration: none; color: rgb(41, 30, 16);"
+                        href="https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/uong-vitamin-co-tac-dung-gi-cho-tre/">Chronic
+                        kidney disease</a>
+                    </b>
+                  </h6>
+                  <p style="font-size: 12.5px; margin-top: -2px; color: rgb(73, 73, 73);">Chronic kidney failure causes decline
+                    renal function. Chronic kidney failure is a condition in which kidney function declines...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 80%; margin: 0px 0px 0px 44px; height: 5px; color: rgb(78, 0, 97); border-radius: 20px;">
+          <!-- 2 -->
+          <div style="width: 100.21%; margin: 20px 0px 0px 2.5px;">
+            <!-- contact -->
+            <div style="width: 90%; margin-top: 4px;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="./../image/bgContact.jpg" width="100%" height="125px" alt="">
+                <div class="overlay">
+                  <h1>Contact</h1>
+                  <p>
+                    <a style="text-decoration: none;"
+                      href="./../contact/contact.html"><strong>MEDICINE-FOODS</strong><br> Vietnamese people's health</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- gallery -->
+            <div style="width: 90%;" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div style="margin: 9px 0px 20px 0px;" class="hovereffect">
+                <img class="img-responsive" src="./../image/contact4.PNG" width="100%" alt="">
+                <div class="overlay">
+                  <h1>Gallery</h1>
+                  <p>
+                    <a style="text-decoration: none;"
+                      href="./../gallery/gallery.html"><strong>MEDICINE-FOODS</strong><br> Vietnamese people's health</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="width: 80%; margin: 2px 0px 0px 41px; height: 5px; color: rgb(78, 0, 97); border-radius: 20px;">
+          <!-- 3 -->
+          <div style="margin-top: 20px;">
+            <h5 style="color: rgb(39, 26, 15); text-align: center; font-weight: 400;">
+              9 HABITS TO MAINTAIN HEALTH
+              <br>
+              <strong style="color: rgb(34, 168, 0);">IN 2022</strong>
+            </h5>
+            <div style="width: 80%; margin: 0px 0px 0px 40px; border-radius: 20px;">
+              <!-- BenTrong9ThoiQuen -->
+              <div class="BenTrong9ThoiQuen" style="line-height: 12px; padding: 14px 0px 6px 0px;">
+                <!-- 1 -->
+                <p>
+                  <strong style="color: rgb(13, 151, 0); font-size: 21px; margin-left: 35px;">9 </strong>
+                  thousand steps per day
+                </p>
+                <!-- 2 -->
+                <p>
+                  <strong style="color: rgb(14, 163, 0); font-size: 21px; margin-left: 35px;">8 </strong>
+                  hours of deep sleep
+                </p>
+                <!-- 3 -->
+                <p>
+                  <strong style="color: rgb(13, 155, 0); font-size: 21px; margin-left: 35px;">7 </strong>
+                  bottle of water 
+                </p>
+                <!-- 4 -->
+                <p>
+                  <strong style="color: rgb(13, 153, 0); font-size: 21px; margin-left: 35px;">6 </strong>
+                  quiet minutes
+                </p>
+                <!-- 5 -->
+                <p>
+                  <strong style="color: rgb(12, 150, 0); font-size: 21px; margin-left: 35px;">5 </strong>
+                  kind of fruits and vegetables
+                </p>
+                <!-- 6 -->
+                <p>
+                  <strong style="color: rgb(12, 150, 0); font-size: 21px; margin-left: 35px;">4 </strong>
+                  short break
+                </p>
+                <!-- 7 -->
+                <p>
+                  <strong style="color: rgb(13, 155, 0); font-size: 21px; margin-left: 35px;">3 </strong>
+                  nutritious meals
+                </p>
+                <!-- 8 -->
+                <p>
+                  <strong style="color: rgb(13, 151, 0); font-size: 21px; margin-left: 35px;">2 </strong>
+                  hours without phone 
+                </p>
+                <!-- 9 -->
+                <p>
+                  <strong style="color: rgb(12, 148, 0); font-size: 21px; margin-left: 35px;">1 </strong>
+                  exercise session from 10 to 30 minutes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- tin tức -->
+    <div class="TinTucCuoi" style="width: 100%; background-color: rgba(192, 221, 206, 0.274);">
+      <div style="background-color: rgba(211, 227, 230, 0.411) !important;">
+        <div style="text-align: center; padding-top: 30px;">
+          <h1 style="color: rgba(0, 128, 38, 0.89); font-weight: 400;">NEWS</h1>
+          <p style="color: rgb(58, 58, 58); margin-top: -5px;">We always update the new Informations</p>
+        </div>
+        <div class="TinTuc" style="margin: 30px 150px 0px 150px; display: flex; padding-bottom: 50px;">
+          <!-- tin tức 1 -->
+          <div class="DivTinTuc1">
+            <div class="IMG">
+              <a href="https://moh.gov.vn/" target="_blank"><img src="../image/TinTuc1.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);" href="https://moh.gov.vn/" target="_blank"> 
+                <b>Ministry of Health: 63 provinces and cities quickly make a list of 10 priority groups for free COVID-19 vaccination
+                  fee.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 10px 10px 10px;">To develop a plan to distribute and deploy vaccinations
+              For COVID-19 prevention and control, the Ministry of Health...</p>
+          </div>
+          <!-- tin tức 2 -->
+          <div class="DivTinTuc2">
+            <div class="IMG">
+              <a
+                href="https://tuoitre.vn/so-ca-nhiem-o-campuchia-vuot-moc-10-000-lao-lan-dau-co-ca-nhiem-3-con-so-20210426180935405.htm"><img
+                  src="../image/TinTuc2.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);"
+                href="https://tuoitre.vn/so-ca-nhiem-o-campuchia-vuot-moc-10-000-lao-lan-dau-co-ca-nhiem-3-con-so-20210426180935405.htm">
+                <b>The number of infections in Cambodia surpassed the 10,000 mark, Laos had a 3-digit case for the first time.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 10px 10px 10px;">
+              TTO - The total number of COVID-19 cases in Cambodia has surpassed
+                            the 10,000 mark after the country had 580 more cases...</p>
+          </div>
+          <!-- tin tức 3 -->
+          <div class="DivTinTuc3">
+            <div class="IMG">
+              <a
+                href="https://tuoitre.vn/ung-thu-dot-quy-nhoi-mau-co-tim-sat-thu-am-tham-tan-pha-suc-khoe-nguoi-tre-20210423192110537.htm"><img
+                  src="../image/TinTuc3.jpg" width="100%" height="183px" alt=""></a>
+            </div>
+            <h6 style="margin: 15px 5px 0px 5px;">
+              <a style="text-decoration: none; color: rgba(0, 0, 0, 0.815);"
+                href="https://tuoitre.vn/ung-thu-dot-quy-nhoi-mau-co-tim-sat-thu-am-tham-tan-pha-suc-khoe-nguoi-tre-20210423192110537.htm">
+                <b>
+                  Cancer, stroke, heart attack ... "killers" silently destroy the health of young people.<br>_______</b>
+              </a>
+            </h6>
+            <p style="font-size: 14px; margin: 10px 5px 10px 5px;">In today's modern life, cancer, stroke,
+              Myocardial infarction - 3 dangerous and dangerous diseases...
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- footer -->
+  <footer class="ftco-footer">
+    <div class="container mb-5 pb-4">
+      <div class="row">
+        <div class="col-lg col-md-6">
+          <div style="width: 350px;" class="ftco-footer-widget ">
+            <h3 class="logo"><a style="text-decoration: none;" href="../HomePage/Index.html"><img
+                  src="../image/logo-footer.png"> Medicine-Foods</a></h3>
+            <p>The website provides information about what to eat and do when you are sick.</p>
+            <ul class="ftco-footer-social list-unstyled mt-4 ">
+              <li><a href="https://github.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2 ">Links</h2>
+            <ul class="list-unstyled ">
+              <li><i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/"
+                    target="_blank">FaceBook</a></i></li>
+              <li><i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/"
+                    target="_blank">Instagram</a></i></li>
+              <li><i style="margin-left: -19px;" class="fa fa-twitter-square" aria-hidden="true"><a href="https://twitter.com/"
+                    target="_blank">Twitter</a></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2 ">Services</h2>
+            <div id="ServicesFooter">
+              <ul class="list-unstyled">
+                <li><i class="fa fa-hand-o-right" aria-hidden="true"><a href="#" class="medicine"
+                      onclick="BuyMedicine();">Buy-Medicine</a></i></li>
+                <li><i style="margin-left: -47px;" class="fa fa-hand-o-right" aria-hidden="true"><a href="../contact/contact.html">Contact</a></i>
+                </li>
+                <li><i style="margin-left: -46px;" class="fa fa-hand-o-right" aria-hidden="true"><a href="../gallery/gallery.html">Gallery</a></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2">Informations</h2>
+            <ul class="list-unstyled ">
+              <li>
+                <i style="line-height: 23px;" class="fa fa-map-marker" aria-hidden="true"><a
+                    href="https://www.google.com/maps/place/158a+L%C3%AA+L%E1%BB%A3i,+H%E1%BA%A3i+Ch%C3%A2u+1,+H%E1%BA%A3i+Ch%C3%A2u,+%C4%90%C3%A0+N%E1%BA%B5ng+550000/@16.0710262,108.2202442,17z/data=!3m1!4b1!4m5!3m4!1s0x314218314984c6bd:0xb53a043f246ab8cb!8m2!3d16.0710262!4d108.2202442"
+                    target="_blank">158A Le Loi</a></i>
+              </li>
+              <li><i class="fa fa-phone" aria-hidden="true"><a href="">0356360278</a></i></li>
+              <li>
+                <i style="line-height: 23px;" class="fa fa-paper-plane-o" aria-hidden="true">
+                  <a href="#" target="_blank">bao.ngo200202@vnuk.edu.vn</a>
+                  <br>
+                  <a style="margin-left: 27px;"
+                    href="#"
+                    target="_blank">nguyen.phan200217@vnuk.edu.vn</a>
+                </i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- add js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../BootStrap 5.0/js 5.0/bootstrap.min.js"></script>
+  <script src="HomePage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
