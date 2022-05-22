@@ -23,7 +23,7 @@
    
 4. [ Contact. ](#con)
 # About the project:
-This project is a gaming online store
+ This project is about health, helping users quickly access the disease they are looking for, and all that information is aggregated and selected from Wikipedia, Google, etc..
 
 <a name="tech"></a>
 ## Built with: 
